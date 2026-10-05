@@ -1,0 +1,1351 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Youssef Hamed Mohamed Rezk | Machine Learning Student & Aspiring AI Engineer</title>
+  <meta name="description" content="Portfolio of Youssef Hamed Mohamed Rezk, a Machine Learning student focused on Artificial Intelligence, data analysis, predictive modeling, and practical Machine Learning solutions.">
+  <meta name="keywords" content="Youssef Hamed Mohamed Rezk, Machine Learning, AI Engineer, Python, Scikit-Learn, XGBoost, Data Science, Menoufia National University, Portfolio">
+  <meta name="author" content="Youssef Hamed Mohamed Rezk">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Youssef Hamed Mohamed Rezk | Machine Learning Student & Aspiring AI Engineer">
+  <meta property="og:description" content="Explore practical Machine Learning projects, data preprocessing workflows, and AI technical skills by Youssef Hamed Mohamed Rezk.">
+  <meta property="og:url" content="https://github.com/youssefhamed540">
+  <meta property="og:image" content="assets/profile.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Youssef Hamed Mohamed Rezk | Machine Learning Student">
+  <meta name="twitter:description" content="Machine Learning student passionate about building practical, data-driven AI solutions.">
+
+  <!-- Favicon (Data URI SVG for clean tech icon) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2338bdf8' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><circle cx='12' cy='12' r='3'/><path d='M3 12h3m12 0h3M12 3v3m0 12v3M5.6 5.6l2.1 2.1m8.6 8.6l2.1 2.1M5.6 18.4l2.1-2.1m8.6-8.6l2.1-2.1'/></svg>">
+
+  <!-- Google Fonts: Space Grotesk & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Background Ambient Glow & Canvas Network -->
+  <div class="ambient-glow" aria-hidden="true"></div>
+  <canvas id="neuralCanvas" class="neural-canvas" aria-hidden="true"></canvas>
+
+  <!-- Navigation Bar -->
+  <header class="navbar-header" id="top">
+    <div class="container nav-container">
+      <a href="#home" class="nav-brand" aria-label="Home">
+        <span class="brand-name">Youssef Rezk</span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-menu" id="navMenu" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#training" class="nav-link">Training</a></li>
+          <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="#career-goal" class="nav-link">Career Goal</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right Nav Actions: Theme Toggle & Mobile Hamburger -->
+      <div class="nav-actions">
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle light or dark theme" title="Toggle theme">
+          <i data-lucide="moon" class="theme-icon-dark"></i>
+          <i data-lucide="sun" class="theme-icon-light"></i>
+        </button>
+
+        <button id="mobileMenuToggle" class="mobile-menu-toggle" aria-expanded="false" aria-controls="navMenu" aria-label="Open mobile menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Overlay Drawer -->
+  <div class="mobile-drawer-backdrop" id="mobileDrawerBackdrop" aria-hidden="true"></div>
+
+  <main id="main-content">
+
+    <!-- ════════════════════════════════════
+         HERO SECTION
+         ════════════════════════════════════ -->
+    <section id="home" class="hero-section">
+      <div class="container hero-container">
+        
+        <div class="hero-content">
+          <!-- Status Pill -->
+          <div class="status-pill reveal">
+            <span class="status-indicator"></span>
+            <span class="status-text">Machine Learning Student • Menoufia National University</span>
+          </div>
+
+          <!-- Hero Name -->
+          <h1 class="hero-title reveal">
+            YOUSSEF HAMED MOHAMED REZK
+          </h1>
+
+          <!-- Primary Subtitle with Dynamic Typing Effect -->
+          <div class="hero-subtitle-wrapper reveal">
+            <h2 class="hero-subtitle">
+              <span id="typingText" class="typing-text">Machine Learning Student | Aspiring AI Engineer</span>
+              <span class="cursor" aria-hidden="true">|</span>
+            </h2>
+          </div>
+
+          <!-- Hero Introduction -->
+          <p class="hero-description reveal">
+            I’m a Machine Learning student passionate about building practical, data-driven AI solutions. I work with Python, data preprocessing, machine learning models, and model evaluation, while continuously expanding my skills in Deep Learning and AI.
+          </p>
+
+          <!-- Supporting Tagline -->
+          <p class="hero-supporting reveal">
+            <i data-lucide="sparkles" class="icon-inline"></i>
+            “Turning data and real-world problems into practical Machine Learning solutions.”
+          </p>
+
+          <!-- Call to Action Buttons -->
+          <div class="hero-cta-group reveal">
+            <a href="#projects" class="btn btn-primary">
+              <span>View My Projects</span>
+              <i data-lucide="arrow-right" class="btn-icon"></i>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Contact Me</span>
+              <i data-lucide="mail" class="btn-icon"></i>
+            </a>
+          </div>
+
+          <!-- Quick Metadata Badges -->
+          <div class="hero-quick-meta reveal">
+            <div class="quick-meta-item">
+              <i data-lucide="map-pin" class="quick-meta-icon"></i>
+              <span>Menoufia, Egypt</span>
+            </div>
+            <div class="quick-meta-item">
+              <i data-lucide="graduation-cap" class="quick-meta-icon"></i>
+              <span>Class of 2028</span>
+            </div>
+            <div class="quick-meta-item">
+              <i data-lucide="binary" class="quick-meta-icon"></i>
+              <span>Data & Predictive ML</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Profile Visual Placeholder Container -->
+        <div class="hero-visual reveal">
+          <div class="profile-card">
+            <div class="profile-frame">
+              <div class="tech-corner corner-tl"></div>
+              <div class="tech-corner corner-tr"></div>
+              <div class="tech-corner corner-bl"></div>
+              <div class="tech-corner corner-br"></div>
+              
+              <!-- Profile Image Container -->
+              <div class="profile-img-container">
+                <img src="assets/profile.jpg" alt="Youssef Hamed Mohamed Rezk" class="profile-img" id="profileImage" onerror="this.style.display='none'; document.getElementById('profilePlaceholderFallback').style.display='flex';">
+                
+                <!-- Fallback stylish placeholder if image cannot be loaded -->
+                <div class="profile-placeholder-fallback" id="profilePlaceholderFallback" style="display: none;">
+                  <div class="avatar-initials-badge">YR</div>
+                  <div class="profile-placeholder-label">[PROFILE PHOTO]</div>
+                  <p class="placeholder-caption">Ready for personal portrait</p>
+                </div>
+              </div>
+
+              <!-- Tech Card Floating Status -->
+              <div class="profile-float-badge float-top">
+                <i data-lucide="brain-circuit" class="badge-icon"></i>
+                <div class="badge-content">
+                  <span class="badge-title">AI & ML Track</span>
+                  <span class="badge-sub">Faculty of Computers & AI</span>
+                </div>
+              </div>
+
+              <div class="profile-float-badge float-bottom">
+                <i data-lucide="cpu" class="badge-icon"></i>
+                <div class="badge-content">
+                  <span class="badge-title">Predictive Systems</span>
+                  <span class="badge-sub">End-to-End Pipelines</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Scroll Down Indicator -->
+      <a href="#about" class="scroll-indicator" aria-label="Scroll down to About section">
+        <span class="scroll-text">Explore Portfolio</span>
+        <i data-lucide="chevron-down" class="scroll-chevron"></i>
+      </a>
+    </section>
+
+    <!-- ════════════════════════════════════
+         ABOUT ME SECTION
+         ════════════════════════════════════ -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <div class="section-badge">
+            <i data-lucide="user" class="badge-icon"></i>
+            <span>Background</span>
+          </div>
+          <h2 class="section-title">About Me</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="about-grid">
+          
+          <!-- Narrative Content -->
+          <div class="about-narrative-card reveal">
+            <h3 class="narrative-heading">
+              Building Solid Foundations in Machine Learning & Data Intelligence
+            </h3>
+            
+            <p class="narrative-text">
+              I am a Machine Learning student at the Faculty of Computers and Artificial Intelligence at Menoufia National University, currently focused on developing my skills in Artificial Intelligence and Machine Learning.
+            </p>
+            
+            <p class="narrative-text">
+              I have hands-on experience with Python, data cleaning, Exploratory Data Analysis, data preprocessing, feature engineering, and building and evaluating Machine Learning models.
+            </p>
+            
+            <p class="narrative-text">
+              I enjoy transforming raw data and real-world problems into practical solutions, with a strong focus on data quality, appropriate model selection, and reliable model evaluation.
+            </p>
+            
+            <p class="narrative-text highlight-box">
+              <i data-lucide="target" class="highlight-icon"></i>
+              <span>I am currently expanding my knowledge of Deep Learning, Cloud Computing, Git/GitHub, Computer Vision, and Natural Language Processing as I work toward becoming an AI Engineer.</span>
+            </p>
+          </div>
+
+          <!-- Academic & Personal Info Panel -->
+          <div class="about-panel reveal">
+            <div class="info-card">
+              <div class="info-card-header">
+                <i data-lucide="id-card" class="info-header-icon"></i>
+                <h4 class="info-card-title">Academic & Professional Profile</h4>
+              </div>
+
+              <div class="info-list">
+                
+                <div class="info-item">
+                  <div class="info-icon-wrapper">
+                    <i data-lucide="user-check" class="info-icon"></i>
+                  </div>
+                  <div class="info-detail">
+                    <span class="info-label">Role</span>
+                    <span class="info-value">Machine Learning Student</span>
+                  </div>
+                </div>
+
+                <div class="info-item">
+                  <div class="info-icon-wrapper">
+                    <i data-lucide="building" class="info-icon"></i>
+                  </div>
+                  <div class="info-detail">
+                    <span class="info-label">University</span>
+                    <span class="info-value">Menoufia National University</span>
+                    <span class="info-sub">Faculty of Computers & Artificial Intelligence</span>
+                  </div>
+                </div>
+
+                <div class="info-item">
+                  <div class="info-icon-wrapper">
+                    <i data-lucide="calendar" class="info-icon"></i>
+                  </div>
+                  <div class="info-detail">
+                    <span class="info-label">Graduation Timeline</span>
+                    <span class="info-value">Expected Graduation: 2028</span>
+                  </div>
+                </div>
+
+                <div class="info-item">
+                  <div class="info-icon-wrapper">
+                    <i data-lucide="compass" class="info-icon"></i>
+                  </div>
+                  <div class="info-detail">
+                    <span class="info-label">Location</span>
+                    <span class="info-value">Based in Menoufia, Egypt</span>
+                  </div>
+                </div>
+
+                <div class="info-item">
+                  <div class="info-icon-wrapper">
+                    <i data-lucide="rocket" class="info-icon"></i>
+                  </div>
+                  <div class="info-detail">
+                    <span class="info-label">Ambition</span>
+                    <span class="info-value text-accent">Aspiring AI Engineer</span>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="info-card-footer">
+                <a href="#contact" class="btn btn-outline btn-sm w-full">
+                  <i data-lucide="send" class="btn-icon"></i>
+                  <span>Get in Touch</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════
+         TECHNICAL SKILLS SECTION
+         ════════════════════════════════════ -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <div class="section-badge">
+            <i data-lucide="cpu" class="badge-icon"></i>
+            <span>Capabilities</span>
+          </div>
+          <h2 class="section-title">Technical Skills</h2>
+          <p class="section-subtitle">A structured overview of core competencies, algorithms, libraries, and active learning areas.</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="skills-grid">
+
+          <!-- Category 1: Programming -->
+          <div class="skill-category-card reveal">
+            <div class="skill-cat-header">
+              <div class="cat-icon-wrap cat-programming">
+                <i data-lucide="code-2" class="cat-icon"></i>
+              </div>
+              <h3 class="cat-title">Programming</h3>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-pill"><i data-lucide="terminal" class="pill-icon"></i> Python</span>
+              <span class="skill-pill"><i data-lucide="database" class="pill-icon"></i> SQL <span class="pill-level">Basic</span></span>
+            </div>
+          </div>
+
+          <!-- Category 2: Data Analysis & Preprocessing -->
+          <div class="skill-category-card reveal">
+            <div class="skill-cat-header">
+              <div class="cat-icon-wrap cat-data">
+                <i data-lucide="bar-chart-2" class="cat-icon"></i>
+              </div>
+              <h3 class="cat-title">Data Analysis & Preprocessing</h3>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-pill">NumPy</span>
+              <span class="skill-pill">Pandas</span>
+              <span class="skill-pill">Data Cleaning</span>
+              <span class="skill-pill">Exploratory Data Analysis (EDA)</span>
+              <span class="skill-pill">Data Preprocessing</span>
+              <span class="skill-pill">Feature Scaling</span>
+              <span class="skill-pill">Feature Engineering</span>
+            </div>
+          </div>
+
+          <!-- Category 3: Machine Learning Core -->
+          <div class="skill-category-card reveal">
+            <div class="skill-cat-header">
+              <div class="cat-icon-wrap cat-ml">
+                <i data-lucide="git-branch" class="cat-icon"></i>
+              </div>
+              <h3 class="cat-title">Machine Learning</h3>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-pill">Supervised Learning</span>
+              <span class="skill-pill">Classification</span>
+              <span class="skill-pill">Regression</span>
+              <span class="skill-pill">Model Training</span>
+              <span class="skill-pill">Model Evaluation</span>
+              <span class="skill-pill">Model Comparison</span>
+              <span class="skill-pill">Hyperparameter Tuning</span>
+              <span class="skill-pill">Cross-Validation</span>
+              <span class="skill-pill">Imbalanced Data Handling</span>
+            </div>
+          </div>
+
+          <!-- Category 4: Machine Learning Algorithms -->
+          <div class="skill-category-card reveal">
+            <div class="skill-cat-header">
+              <div class="cat-icon-wrap cat-algo">
+                <i data-lucide="workflow" class="cat-icon"></i>
+              </div>
+              <h3 class="cat-title">Machine Learning Algorithms</h3>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-pill">Logistic Regression</span>
+              <span class="skill-pill">Decision Trees</span>
+              <span class="skill-pill">Random Forest</span>
+              <span class="skill-pill">K-Nearest Neighbors (KNN)</span>
+              <span class="skill-pill">Gradient Boosting</span>
+              <span class="skill-pill">XGBoost</span>
+              <span class="skill-pill">AdaBoost</span>
+              <span class="skill-pill">Gaussian Naive Bayes</span>
+            </div>
+          </div>
+
+          <!-- Category 5: Data Visualization -->
+          <div class="skill-category-card reveal">
+            <div class="skill-cat-header">
+              <div class="cat-icon-wrap cat-viz">
+                <i data-lucide="pie-chart" class="cat-icon"></i>
+              </div>
+              <h3 class="cat-title">Data Visualization</h3>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-pill"><i data-lucide="line-chart" class="pill-icon"></i> Matplotlib</span>
+              <span class="skill-pill"><i data-lucide="scatter-chart" class="pill-icon"></i> Seaborn</span>
+            </div>
+          </div>
+
+          <!-- Category 6: Deployment -->
+          <div class="skill-category-card reveal">
+            <div class="skill-cat-header">
+              <div class="cat-icon-wrap cat-deploy">
+                <i data-lucide="layout" class="cat-icon"></i>
+              </div>
+              <h3 class="cat-title">Deployment</h3>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-pill"><i data-lucide="monitor" class="pill-icon"></i> Streamlit</span>
+            </div>
+          </div>
+
+          <!-- Category 7: Tools & Environment -->
+          <div class="skill-category-card reveal">
+            <div class="skill-cat-header">
+              <div class="cat-icon-wrap cat-tools">
+                <i data-lucide="wrench" class="cat-icon"></i>
+              </div>
+              <h3 class="cat-title">Tools</h3>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-pill">Jupyter Notebook</span>
+              <span class="skill-pill">Google Colab</span>
+              <span class="skill-pill">VS Code</span>
+              <span class="skill-pill">Git</span>
+              <span class="skill-pill">GitHub</span>
+            </div>
+          </div>
+
+          <!-- Category 8: Currently Learning (Visually Distinguished) -->
+          <div class="skill-category-card category-learning reveal">
+            <div class="skill-cat-header">
+              <div class="cat-icon-wrap cat-learning-badge">
+                <i data-lucide="trending-up" class="cat-icon"></i>
+              </div>
+              <div>
+                <h3 class="cat-title">Currently Learning</h3>
+                <span class="learning-note">Active Growth Areas</span>
+              </div>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-pill pill-learning">
+                <span class="pulsing-dot"></span> Deep Learning <span class="pill-tag">Beginner</span>
+              </span>
+              <span class="skill-pill pill-learning">
+                <span class="pulsing-dot"></span> Cloud Computing <span class="pill-tag">Beginner</span>
+              </span>
+              <span class="skill-pill pill-learning">
+                <span class="pulsing-dot"></span> Computer Vision <span class="pill-tag">Beginner</span>
+              </span>
+              <span class="skill-pill pill-learning">
+                <span class="pulsing-dot"></span> Natural Language Processing (NLP) <span class="pill-tag">Beginner</span>
+              </span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════
+         FEATURED PROJECTS SECTION
+         ════════════════════════════════════ -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <div class="section-badge">
+            <i data-lucide="folder-git-2" class="badge-icon"></i>
+            <span>Portfolio</span>
+          </div>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Real-world problem formulations, preprocessing pipelines, model benchmarks, and interactive evaluations.</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- PROJECT 1: Flagship Project -->
+          <article class="project-card project-card-flagship reveal">
+            <div class="flagship-banner">
+              <i data-lucide="award" class="banner-icon"></i>
+              <span>Featured Machine Learning System</span>
+            </div>
+            
+            <div class="project-card-body">
+              <div class="project-meta-top">
+                <span class="project-category-tag">Machine Learning | Classification</span>
+                <span class="project-highlight-badge">Best Model: XGBoost</span>
+              </div>
+
+              <h3 class="project-title">Loan Default Prediction System</h3>
+
+              <p class="project-desc">
+                An end-to-end Machine Learning system designed to predict customers who are at higher risk of loan default, supporting financial risk assessment.
+              </p>
+
+              <!-- Technical Highlights Grid -->
+              <div class="project-highlights-block">
+                <h4 class="highlights-title">
+                  <i data-lucide="check-circle" class="highlights-icon"></i>
+                  Key Technical Work & Methodology
+                </h4>
+                <ul class="highlights-list">
+                  <li>Data cleaning, missing value handling, and thorough Exploratory Data Analysis</li>
+                  <li>Feature scaling using <strong>StandardScaler</strong></li>
+                  <li>Class imbalance mitigation using <strong>Random Under-Sampling</strong></li>
+                  <li>Training and rigorous comparison of multiple Machine Learning models</li>
+                  <li>Model evaluation using multiple performance metrics with <strong>F1-Score</strong> prioritized due to severe class imbalance</li>
+                  <li>Confusion Matrix and <strong>ROC-AUC</strong> curve analysis</li>
+                  <li><strong>Decision Threshold Tuning</strong> applied to maximize Recall on positive default cases</li>
+                  <li>Interactive <strong>Streamlit interface</strong> developed as part of the project team</li>
+                </ul>
+              </div>
+
+              <!-- Tech Stack Badges -->
+              <div class="project-tech-stack">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Pandas</span>
+                <span class="tech-tag">NumPy</span>
+                <span class="tech-tag">Scikit-Learn</span>
+                <span class="tech-tag">XGBoost</span>
+                <span class="tech-tag">Matplotlib</span>
+                <span class="tech-tag">Seaborn</span>
+                <span class="tech-tag">Streamlit</span>
+              </div>
+
+              <!-- Project Links Footer -->
+              <div class="project-card-footer">
+                <a href="https://github.com/youssefhamed540" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                  <i data-lucide="github" class="btn-icon"></i>
+                  <span>[View on GitHub]</span>
+                </a>
+                <span class="project-status-note">End-to-End System</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: Titanic Survival -->
+          <article class="project-card reveal">
+            <div class="project-card-body">
+              <div class="project-meta-top">
+                <span class="project-category-tag">Machine Learning | Classification</span>
+              </div>
+
+              <h3 class="project-title">Titanic Survival Prediction</h3>
+
+              <p class="project-desc">
+                A Machine Learning training project focused on predicting passenger survival using the Titanic dataset.
+              </p>
+
+              <div class="project-highlights-block">
+                <h4 class="highlights-title">
+                  <i data-lucide="check-circle" class="highlights-icon"></i>
+                  Key Technical Work
+                </h4>
+                <ul class="highlights-list">
+                  <li>Data Cleaning & Missing Value Imputation</li>
+                  <li>Exploratory Data Analysis (EDA) of passenger demographics</li>
+                  <li>Data Preprocessing & Categorical Feature Preparation</li>
+                  <li>Supervised Model Training & Cross-Validation</li>
+                  <li>Model Evaluation on Test Accuracy & Precision</li>
+                </ul>
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Pandas</span>
+                <span class="tech-tag">NumPy</span>
+                <span class="tech-tag">Scikit-Learn</span>
+                <span class="tech-tag">Matplotlib</span>
+                <span class="tech-tag">Seaborn</span>
+              </div>
+
+              <div class="project-card-footer">
+                <a href="https://github.com/youssefhamed540" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <i data-lucide="github" class="btn-icon"></i>
+                  <span>[View on GitHub]</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: House Price Prediction -->
+          <article class="project-card reveal">
+            <div class="project-card-body">
+              <div class="project-meta-top">
+                <span class="project-category-tag">Machine Learning | Regression</span>
+              </div>
+
+              <h3 class="project-title">House Price Prediction</h3>
+
+              <p class="project-desc">
+                A Machine Learning training project focused on predicting house prices using structured housing data.
+              </p>
+
+              <div class="project-highlights-block">
+                <h4 class="highlights-title">
+                  <i data-lucide="check-circle" class="highlights-icon"></i>
+                  Key Technical Work
+                </h4>
+                <ul class="highlights-list">
+                  <li>Data Cleaning & Multicollinearity Inspection</li>
+                  <li>Exploratory Data Analysis on continuous & discrete variables</li>
+                  <li>Data Preprocessing & Continuous Feature Scaling</li>
+                  <li>Feature Preparation and Regression Model Training</li>
+                  <li>Model Evaluation (MAE, MSE, RMSE, R²-Score)</li>
+                </ul>
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Pandas</span>
+                <span class="tech-tag">NumPy</span>
+                <span class="tech-tag">Scikit-Learn</span>
+                <span class="tech-tag">Matplotlib</span>
+                <span class="tech-tag">Seaborn</span>
+              </div>
+
+              <div class="project-card-footer">
+                <a href="https://github.com/youssefhamed540" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <i data-lucide="github" class="btn-icon"></i>
+                  <span>[View on GitHub]</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 4: EDA & Predictive ML Pipeline -->
+          <article class="project-card reveal">
+            <div class="project-card-body">
+              <div class="project-meta-top">
+                <span class="project-category-tag">Data Analysis | Machine Learning</span>
+              </div>
+
+              <h3 class="project-title">Exploratory Data Analysis & Predictive ML Pipeline</h3>
+
+              <p class="project-desc">
+                An end-to-end data analysis and Machine Learning workflow focused on preparing real-world datasets and developing predictive models.
+              </p>
+
+              <div class="project-highlights-block">
+                <h4 class="highlights-title">
+                  <i data-lucide="check-circle" class="highlights-icon"></i>
+                  Key Technical Work
+                </h4>
+                <ul class="highlights-list">
+                  <li>Missing value imputation strategies</li>
+                  <li>Statistical outlier detection & trimming</li>
+                  <li>Categorical encoding techniques</li>
+                  <li>Statistical visualizations & correlation matrices</li>
+                  <li>Pattern analysis & feature importance</li>
+                  <li>Classification model evaluation</li>
+                </ul>
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Pandas</span>
+                <span class="tech-tag">NumPy</span>
+                <span class="tech-tag">Scikit-Learn</span>
+                <span class="tech-tag">Seaborn</span>
+                <span class="tech-tag">Matplotlib</span>
+              </div>
+
+              <div class="project-card-footer">
+                <a href="https://github.com/youssefhamed540" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <i data-lucide="github" class="btn-icon"></i>
+                  <span>[View on GitHub]</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 5: Audio Signal Processing -->
+          <article class="project-card reveal">
+            <div class="project-card-body">
+              <div class="project-meta-top">
+                <span class="project-category-tag">Python | Audio Processing</span>
+              </div>
+
+              <h3 class="project-title">Audio Signal Processing & Visualization Pipeline</h3>
+
+              <p class="project-desc">
+                A Python-based audio processing workflow for loading, analyzing, and extracting useful information from raw sound files.
+              </p>
+
+              <div class="project-highlights-block">
+                <h4 class="highlights-title">
+                  <i data-lucide="check-circle" class="highlights-icon"></i>
+                  Key Technical Work
+                </h4>
+                <ul class="highlights-list">
+                  <li>Audio file loading & sampling rate processing</li>
+                  <li>Acoustic feature extraction (MFCCs, Spectral Centroids)</li>
+                  <li>Time-domain waveform visualization</li>
+                  <li>Frequency-domain spectrogram visualization</li>
+                  <li>Acoustic feature analysis for sound representation</li>
+                </ul>
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Librosa</span>
+                <span class="tech-tag">Soundfile</span>
+                <span class="tech-tag">Matplotlib</span>
+                <span class="tech-tag">NumPy</span>
+              </div>
+
+              <div class="project-card-footer">
+                <a href="https://github.com/youssefhamed540" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <i data-lucide="github" class="btn-icon"></i>
+                  <span>[View on GitHub]</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════
+         TRAINING & EXPERIENCE SECTION
+         ════════════════════════════════════ -->
+    <section id="training" class="section training-section">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <div class="section-badge">
+            <i data-lucide="briefcase" class="badge-icon"></i>
+            <span>Development</span>
+          </div>
+          <h2 class="section-title">Training & Experience</h2>
+          <p class="section-subtitle">Structured vocational training initiatives, hands-on lab programs, and technical intensives.</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="timeline-container">
+          
+          <!-- Timeline Item 1 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-marker">
+              <div class="marker-dot current"></div>
+              <div class="marker-line"></div>
+            </div>
+            
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <span class="timeline-role-badge">Trainee Program</span>
+                  <h3 class="timeline-org">Digital Egypt Pioneers Initiative (DEPI)</h3>
+                  <h4 class="timeline-role">Machine Learning & AI Trainee</h4>
+                </div>
+                <div class="timeline-date">
+                  <i data-lucide="calendar" class="date-icon"></i>
+                  <span>Nov 2025 – Present</span>
+                </div>
+              </div>
+
+              <p class="timeline-desc">
+                Currently participating in specialized Machine Learning and AI training focused on developing practical skills and applying Machine Learning concepts through projects.
+              </p>
+
+              <div class="timeline-highlights">
+                <h5 class="timeline-highlights-title">Program Highlights:</h5>
+                <ul class="timeline-list">
+                  <li>Hands-on Machine Learning training</li>
+                  <li>End-to-end Machine Learning workflows</li>
+                  <li>Practical project-based learning</li>
+                  <li>Remote team collaboration</li>
+                  <li>Version control and Git/GitHub practices</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+              <div class="marker-line"></div>
+            </div>
+            
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <span class="timeline-role-badge">Intensive Training</span>
+                  <h3 class="timeline-org">National Telecommunication Institute (NTI)</h3>
+                  <h4 class="timeline-role">Machine Learning Training</h4>
+                </div>
+                <div class="timeline-date">
+                  <i data-lucide="clock" class="date-icon"></i>
+                  <span>2025 • 120 Hours</span>
+                </div>
+              </div>
+
+              <p class="timeline-desc">
+                Practical training focused on Python, data analysis, data preprocessing, Machine Learning concepts, model development, and model evaluation.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+            </div>
+            
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <span class="timeline-role-badge">Foundation Program</span>
+                  <h3 class="timeline-org">Ministry of Youth and Sports</h3>
+                  <h4 class="timeline-role">Artificial Intelligence Training</h4>
+                </div>
+                <div class="timeline-date">
+                  <i data-lucide="award" class="date-icon"></i>
+                  <span>Completed Program</span>
+                </div>
+              </div>
+
+              <p class="timeline-desc">
+                AI-focused training covering fundamental Artificial Intelligence concepts and applications.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════
+         DATABASE & ADDITIONAL TECHNICAL EXPERIENCE
+         ════════════════════════════════════ -->
+    <section class="section additional-tech-section">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <div class="section-badge">
+            <i data-lucide="database-zap" class="badge-icon"></i>
+            <span>Engineering</span>
+          </div>
+          <h2 class="section-title">Additional Technical Experience</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="additional-tech-grid">
+          
+          <div class="additional-card reveal">
+            <div class="additional-card-header">
+              <div class="icon-box">
+                <i data-lucide="database" class="box-icon"></i>
+              </div>
+              <h3 class="additional-title">Relational Database & PL/SQL Management System</h3>
+            </div>
+            
+            <p class="additional-desc">
+              Designed relational database schemas, Entity-Relationship Diagrams (ERD), and relational mapping rules. Developed SQL queries and procedural database logic for managing structured data.
+            </p>
+
+            <div class="tech-pill-group">
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">PostgreSQL</span>
+              <span class="tech-tag">SQL</span>
+              <span class="tech-tag">PL/SQL</span>
+              <span class="tech-tag">Database Design</span>
+            </div>
+          </div>
+
+          <div class="additional-card reveal">
+            <div class="additional-card-header">
+              <div class="icon-box">
+                <i data-lucide="layers" class="box-icon"></i>
+              </div>
+              <h3 class="additional-title">Foundational Programming & Version Control</h3>
+            </div>
+            
+            <p class="additional-desc">
+              Solid understanding of object-oriented concepts, structured algorithms, and modern collaborative engineering workflows.
+            </p>
+
+            <div class="tech-pill-group">
+              <span class="tech-tag">C++</span>
+              <span class="tech-tag">Basic SQL</span>
+              <span class="tech-tag">Git</span>
+              <span class="tech-tag">GitHub</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════
+         SERVICES / WHAT I CAN BUILD SECTION
+         ════════════════════════════════════ -->
+    <section id="services" class="section services-section">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <div class="section-badge">
+            <i data-lucide="box" class="badge-icon"></i>
+            <span>Capabilities</span>
+          </div>
+          <h2 class="section-title">What I Can Build</h2>
+          <p class="section-subtitle">
+            I focus on building practical Machine Learning prototypes and data-driven solutions, from preparing raw datasets to training, evaluating, and presenting predictive models.
+          </p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="services-grid">
+          
+          <!-- Service 1 -->
+          <div class="service-card reveal">
+            <div class="service-icon-wrap">
+              <i data-lucide="cpu" class="service-icon"></i>
+            </div>
+            <h3 class="service-title">Machine Learning Prototyping</h3>
+            <p class="service-desc">
+              Rapid development of working Machine Learning prototypes to test hypothesis feasibility, assess data viability, and validate algorithm performance on real problems.
+            </p>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="service-card reveal">
+            <div class="service-icon-wrap">
+              <i data-lucide="sparkles" class="service-icon"></i>
+            </div>
+            <h3 class="service-title">Data Cleaning & Exploratory Analysis</h3>
+            <p class="service-desc">
+              Transforming messy datasets into structured, analytics-ready formats through rigorous imputation, distribution inspection, and statistical feature scaling.
+            </p>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="service-card reveal">
+            <div class="service-icon-wrap">
+              <i data-lucide="line-chart" class="service-icon"></i>
+            </div>
+            <h3 class="service-title">Predictive Model Development</h3>
+            <p class="service-desc">
+              Engineering supervised classification and regression pipelines tailored to problem constraints, featuring algorithm comparisons and hyperparameter tuning.
+            </p>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="service-card reveal">
+            <div class="service-icon-wrap">
+              <i data-lucide="check-check" class="service-icon"></i>
+            </div>
+            <h3 class="service-title">Machine Learning Model Evaluation</h3>
+            <p class="service-desc">
+              In-depth diagnostic assessment using specialized metrics (Precision, Recall, F1, ROC-AUC), decision threshold tuning, and confusion matrix error analysis.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════
+         SOFT SKILLS SECTION
+         ════════════════════════════════════ -->
+    <section class="section soft-skills-section">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <div class="section-badge">
+            <i data-lucide="heart-handshake" class="badge-icon"></i>
+            <span>Attributes</span>
+          </div>
+          <h2 class="section-title">Soft Skills</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="soft-skills-grid">
+          
+          <div class="soft-skill-card reveal">
+            <div class="soft-skill-icon-wrap">
+              <i data-lucide="puzzle" class="soft-skill-icon"></i>
+            </div>
+            <span class="soft-skill-name">Problem Solving</span>
+          </div>
+
+          <div class="soft-skill-card reveal">
+            <div class="soft-skill-icon-wrap">
+              <i data-lucide="brain" class="soft-skill-icon"></i>
+            </div>
+            <span class="soft-skill-name">Analytical Thinking</span>
+          </div>
+
+          <div class="soft-skill-card reveal">
+            <div class="soft-skill-icon-wrap">
+              <i data-lucide="users" class="soft-skill-icon"></i>
+            </div>
+            <span class="soft-skill-name">Teamwork</span>
+          </div>
+
+          <div class="soft-skill-card reveal">
+            <div class="soft-skill-icon-wrap">
+              <i data-lucide="refresh-cw" class="soft-skill-icon"></i>
+            </div>
+            <span class="soft-skill-name">Continuous Learning</span>
+          </div>
+
+          <div class="soft-skill-card reveal">
+            <div class="soft-skill-icon-wrap">
+              <i data-lucide="search" class="soft-skill-icon"></i>
+            </div>
+            <span class="soft-skill-name">Research & Learning</span>
+          </div>
+
+          <div class="soft-skill-card reveal">
+            <div class="soft-skill-icon-wrap">
+              <i data-lucide="message-square" class="soft-skill-icon"></i>
+            </div>
+            <span class="soft-skill-name">Communication</span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════
+         CAREER GOAL SECTION
+         ════════════════════════════════════ -->
+    <section id="career-goal" class="section career-goal-section">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <div class="section-badge">
+            <i data-lucide="compass" class="badge-icon"></i>
+            <span>Roadmap</span>
+          </div>
+          <h2 class="section-title">Career Goal</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="career-goal-card reveal">
+          
+          <!-- Career Statement -->
+          <div class="career-statement-wrap">
+            <div class="quote-symbol" aria-hidden="true">“</div>
+            <p class="career-statement-text">
+              My goal is to build a career in Artificial Intelligence and become an AI Engineer by strengthening my expertise in Machine Learning and Deep Learning, expanding into Deployment and Cloud Computing, and building practical AI solutions that create real-world value.
+            </p>
+          </div>
+
+          <!-- Visual Progression Diagram -->
+          <div class="progression-container">
+            <h3 class="progression-title">Milestone & Skill Progression Pathway</h3>
+            
+            <div class="progression-flow">
+              
+              <!-- Step 1 -->
+              <div class="progression-step active-step">
+                <div class="step-badge">Phase 1</div>
+                <div class="step-node">
+                  <i data-lucide="activity" class="step-icon"></i>
+                </div>
+                <div class="step-label">Machine Learning</div>
+                <div class="step-status">Active Foundation</div>
+              </div>
+
+              <div class="progression-arrow" aria-hidden="true">
+                <i data-lucide="arrow-right" class="arrow-desktop"></i>
+                <i data-lucide="arrow-down" class="arrow-mobile"></i>
+              </div>
+
+              <!-- Step 2 -->
+              <div class="progression-step current-learning-step">
+                <div class="step-badge">Phase 2</div>
+                <div class="step-node">
+                  <i data-lucide="network" class="step-icon"></i>
+                </div>
+                <div class="step-label">Deep Learning</div>
+                <div class="step-status">Currently Learning</div>
+              </div>
+
+              <div class="progression-arrow" aria-hidden="true">
+                <i data-lucide="arrow-right" class="arrow-desktop"></i>
+                <i data-lucide="arrow-down" class="arrow-mobile"></i>
+              </div>
+
+              <!-- Step 3 -->
+              <div class="progression-step">
+                <div class="step-badge">Phase 3</div>
+                <div class="step-node">
+                  <i data-lucide="box" class="step-icon"></i>
+                </div>
+                <div class="step-label">Deployment</div>
+                <div class="step-status">Streamlit & APIs</div>
+              </div>
+
+              <div class="progression-arrow" aria-hidden="true">
+                <i data-lucide="arrow-right" class="arrow-desktop"></i>
+                <i data-lucide="arrow-down" class="arrow-mobile"></i>
+              </div>
+
+              <!-- Step 4 -->
+              <div class="progression-step">
+                <div class="step-badge">Phase 4</div>
+                <div class="step-node">
+                  <i data-lucide="cloud" class="step-icon"></i>
+                </div>
+                <div class="step-label">Cloud Computing</div>
+                <div class="step-status">Scalable ML</div>
+              </div>
+
+              <div class="progression-arrow" aria-hidden="true">
+                <i data-lucide="arrow-right" class="arrow-desktop"></i>
+                <i data-lucide="arrow-down" class="arrow-mobile"></i>
+              </div>
+
+              <!-- Step 5 (Destination) -->
+              <div class="progression-step target-step">
+                <div class="step-badge target-badge">Final Goal</div>
+                <div class="step-node target-node">
+                  <i data-lucide="bot" class="step-icon"></i>
+                </div>
+                <div class="step-label text-accent font-bold">AI Engineer</div>
+                <div class="step-status">Full-Stack AI Impact</div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════
+         CONTACT SECTION
+         ════════════════════════════════════ -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <div class="section-badge">
+            <i data-lucide="message-circle" class="badge-icon"></i>
+            <span>Get In Touch</span>
+          </div>
+          <h2 class="section-title">Let’s Connect</h2>
+          <p class="section-subtitle">
+            I’m always interested in learning, collaborating on Machine Learning projects, and connecting with people working in AI and technology.
+          </p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Direct Information -->
+          <div class="contact-info-column reveal">
+            <div class="contact-info-card">
+              <h3 class="contact-card-title">Contact Information</h3>
+              <p class="contact-card-sub">Feel free to reach out via email or connect through professional networks.</p>
+
+              <div class="contact-channels">
+                
+                <!-- Email -->
+                <div class="channel-item">
+                  <div class="channel-icon-wrap">
+                    <i data-lucide="mail" class="channel-icon"></i>
+                  </div>
+                  <div class="channel-details">
+                    <span class="channel-label">Email</span>
+                    <a href="mailto:youssefhamed540@gmail.com" class="channel-link">youssefhamed540@gmail.com</a>
+                  </div>
+                  <button class="copy-btn" id="copyEmailBtn" data-copy="youssefhamed540@gmail.com" title="Copy email address" aria-label="Copy email address">
+                    <i data-lucide="copy" class="copy-icon"></i>
+                    <span class="copy-tooltip">Copied!</span>
+                  </button>
+                </div>
+
+                <!-- GitHub -->
+                <div class="channel-item">
+                  <div class="channel-icon-wrap">
+                    <i data-lucide="github" class="channel-icon"></i>
+                  </div>
+                  <div class="channel-details">
+                    <span class="channel-label">GitHub</span>
+                    <a href="https://github.com/youssefhamed540" target="_blank" rel="noopener noreferrer" class="channel-link">github.com/youssefhamed540</a>
+                  </div>
+                  <a href="https://github.com/youssefhamed540" target="_blank" rel="noopener noreferrer" class="channel-action" aria-label="Open GitHub profile">
+                    <i data-lucide="external-link"></i>
+                  </a>
+                </div>
+
+                <!-- LinkedIn -->
+                <div class="channel-item">
+                  <div class="channel-icon-wrap">
+                    <i data-lucide="linkedin" class="channel-icon"></i>
+                  </div>
+                  <div class="channel-details">
+                    <span class="channel-label">LinkedIn</span>
+                    <a href="https://linkedin.com/in/youssef-hamed-bb360b343" target="_blank" rel="noopener noreferrer" class="channel-link">linkedin.com/in/youssef-hamed-bb360b343</a>
+                  </div>
+                  <a href="https://linkedin.com/in/youssef-hamed-bb360b343" target="_blank" rel="noopener noreferrer" class="channel-action" aria-label="Open LinkedIn profile">
+                    <i data-lucide="external-link"></i>
+                  </a>
+                </div>
+
+              </div>
+
+              <!-- Social Profiles -->
+              <div class="social-links-block">
+                <h4 class="social-block-title">Profiles & Social Networks</h4>
+                <div class="social-buttons-row">
+                  <a href="https://github.com/youssefhamed540" target="_blank" rel="noopener noreferrer" class="social-pill" title="GitHub Profile">
+                    <i data-lucide="github" class="social-icon"></i>
+                    <span>GitHub</span>
+                  </a>
+                  <a href="https://linkedin.com/in/youssef-hamed-bb360b343" target="_blank" rel="noopener noreferrer" class="social-pill" title="LinkedIn Profile">
+                    <i data-lucide="linkedin" class="social-icon"></i>
+                    <span>LinkedIn</span>
+                  </a>
+                  <a href="#" class="social-pill social-placeholder" title="YouTube Profile [Placeholder]" onclick="event.preventDefault(); alert('YouTube Profile placeholder: link will be added upon channel launch.');">
+                    <i data-lucide="youtube" class="social-icon"></i>
+                    <span>[YouTube Profile]</span>
+                  </a>
+                  <a href="#" class="social-pill social-placeholder" title="Facebook Profile [Placeholder]" onclick="event.preventDefault(); alert('Facebook Profile placeholder: link will be added soon.');">
+                    <i data-lucide="facebook" class="social-icon"></i>
+                    <span>[Facebook Profile]</span>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Contact Form Column -->
+          <div class="contact-form-column reveal">
+            <div class="contact-form-card">
+              <h3 class="contact-card-title">Send a Direct Message</h3>
+              <p class="contact-card-sub">Have a question or project inquiry? Fill out the details below.</p>
+
+              <form id="contactForm" class="contact-form" novalidate>
+                
+                <div class="form-group">
+                  <label for="contactName" class="form-label">Your Name <span class="required">*</span></label>
+                  <input type="text" id="contactName" name="name" class="form-input" placeholder="e.g. Sarah Jenkins" required>
+                  <span class="field-error-message" id="nameError"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="contactEmail" class="form-label">Email Address <span class="required">*</span></label>
+                  <input type="email" id="contactEmail" name="email" class="form-input" placeholder="sarah@example.com" required>
+                  <span class="field-error-message" id="emailError"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="contactSubject" class="form-label">Subject <span class="required">*</span></label>
+                  <input type="text" id="contactSubject" name="subject" class="form-input" placeholder="ML Project Inquiry / Discussion" required>
+                  <span class="field-error-message" id="subjectError"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="contactMessage" class="form-label">Message <span class="required">*</span></label>
+                  <textarea id="contactMessage" name="message" class="form-textarea" rows="4" placeholder="Hello Youssef, I would love to connect regarding..." required></textarea>
+                  <span class="field-error-message" id="messageError"></span>
+                </div>
+
+                <!-- Submission Feedback Banner -->
+                <div id="formStatusMessage" class="form-status-banner" style="display: none;" role="alert">
+                  <i data-lucide="check-circle-2" class="status-msg-icon"></i>
+                  <span class="status-msg-text">Thanks! Your message has been prepared successfully.</span>
+                </div>
+
+                <button type="submit" class="btn btn-primary w-full" id="submitBtn">
+                  <span>Send Message</span>
+                  <i data-lucide="send" class="btn-icon"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ════════════════════════════════════
+       FOOTER
+       ════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container footer-container">
+      
+      <div class="footer-meta">
+        <p class="footer-copy">
+          © 2026 Youssef Hamed Mohamed Rezk. All rights reserved.
+        </p>
+        <p class="footer-title">
+          Machine Learning Student | Aspiring AI Engineer
+        </p>
+      </div>
+
+      <div class="footer-actions">
+        <a href="#home" class="back-to-top-link" id="footerBackToTop">
+          <span>Back to top &uarr;</span>
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button id="floatingBackToTop" class="floating-back-to-top" aria-label="Back to top" title="Scroll to top">
+    <i data-lucide="arrow-up" class="top-arrow-icon"></i>
+  </button>
+
+  <!-- Main JavaScript File -->
+  <script src="js/script.js"></script>
+</body>
+</html>
